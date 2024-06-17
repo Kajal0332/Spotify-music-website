@@ -1,0 +1,9 @@
+.playlist a{
+    text-decoration: none;
+    color: gray;
+    font-size: 10px;
+}
+
+.all-flex img{
+    cursor: pointer;
+}

@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Sedgwick+Ave+Display&family=Silkscreen:wght@400;700&display=swap');
+
+:root{
+    /* ======= Color ========== */
+    --body-color: #050505;
+    --sidebar-color: #110f0f;
+    --primary-color: #695cff;
+    --primary-color-light: #f6f5ff;
+    --toggle-color: #ddd;
+    --text-color: #707070;
+    --box-background-color-light: #222020;
+
+    /* ========= Transition =======  */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--body-color);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+body::-webkit-scrollbar{
+    width: 0px;
+}
+
+.fullWidth{
+    width: 100%;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.scrolling-y{
+    height: 210px;
+    overflow-y: auto;
+    /* background-color: #050505; */
+}
+/* .scrolling-y::-webkit-scrollbar{
+    width: 0px;
+} */
+
+.image-text .image img{
+    /* font-size: 40px; */
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    margin-left: 25px;
+}
+.image-text .image span{
+    font-size: 40px;
+}
+.image-text .image {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.liftSideBar{
+    /* position: fixed; */
+    height: 100vh;
+    width: 25%;
+    /* background-color: #695cff; */
+    margin: 10px;
+}
+
+.first-sec{
+    background-color: var(--sidebar-color);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.first-sec .seachBar i{
+    margin-right: 15px;
+    font-size: 30px;
+}
+.first-sec .seachBar{
+    margin: 15px;
+}
+.first-sec .home i{
+    margin-right: 15px;
+    font-size: 30px;
+}
+.first-sec .home {
+    margin: 15px;
+    
+}
+
+/* ====== second sec ======  */
+.Second-sec{
+    background-color: var(--sidebar-color);
+    padding: 10px;
+    border-radius: 10px;
+    /* height: ; */
+}
+
+.yourLibrary{
+    padding: 10px 20px;
+}
+.yourLibrary i{
+    /* padding: 10px 20px; */
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+/* =========================================================================  */
+.home, .seachBar, .yourLibrary, .recents{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.home:hover, .seachBar:hover, .yourLibrary:hover, .recents:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.recents{
+    padding: 10px 20px;
+    display: flex;
+    width: 100%;
+}
+.recents .recents-icon{
+    float: right;
+}
+/* 
+.leftSideBar{
+    width: 70px;
+    text-align: center;
+} */
+/* .leftSideBar .text{
+    opacity: 0;
+    padding: 0;
+} */
+
+.like-icon{
+    /* background-color: var(--toggle-color); */
+    margin-bottom:13px ;
+    border-radius: 10px ;
+}
+.like-icon i{
+    background: rgb(249,249,249);
+    background: radial-gradient(circle, rgba(249,249,249,1) 0%, rgba(50,106,175,1) 100%);
+    padding: 15px;
+    border-radius: 10px ;
+    font-size: 25px;
+}
+.save-icon i{
+    background-color: #157347;
+    color: rgb(5, 212, 5);
+    padding: 15px 18px;
+    border-radius: 10px ;
+    font-size: 25px;
+}
